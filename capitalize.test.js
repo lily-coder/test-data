@@ -4,6 +4,6 @@ test('capitalize first letter', () => {
   expect(capitalize('lilian')).toMatch('Lilian');
 });
 
-test('capitalize first letter', () => {
-  expect(capitalize('')).toBe(Error);
-});
+test('show error if empty string', () => {
+  expect(() => {capitalize(''); }).toThrow();
+})
